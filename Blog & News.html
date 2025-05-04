@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiGi Assignment Support | Blog & News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #0A9274;
+            color: white;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #3eff62;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        nav a.active {
+            color: #46e829;
+            pointer-events: none;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-switch button {
+            background: #ffffff33;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #0A9274;
+            text-align: center;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 20px;
+        }
+        .blog-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0A9274;
+            margin: 0 0 10px 0;
+        }
+        .blog-desc {
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            background: #0A9274;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 data-lang data-lang-vie="Hỗ Trợ Bài Tập GiGi" data-lang-eng="GiGi Assignment Support">GiGi Assignment Support</h1>
+        <nav>
+            <a href="index.html" data-lang-eng="Home">Home</a>
+            <a href="Aboutus.html" data-lang-eng="About Us">About Us</a>
+            <a href="Services.html" data-lang-eng="Services">Services</a>
+            <a href="Blog & News.html" class="active" data-lang-eng="Blog & News">Blog & News</a>
+            <a href="Ourcareers.html" data-lang-eng="Our Careers">Our Careers</a>
+        </nav>
+    
+    </div>
+</header>
+<div class="container"></div>
+    <h2 class="section-title">Blog & News</h2>
+    <div class="blog-grid">
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/4ZzWdbyz/image.png" alt="Blog 1">
+            <div class="blog-content">
+                <h3 class="blog-title">Effective Essay Writing Tips</h3>
+                <p class="blog-desc">Master the structure and strategy to write outstanding academic essays.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/HDtsFLy1/image.png" alt="Blog 2">
+            <div class="blog-content">
+                <h3 class="blog-title">Top 5 Research Tools for Students</h3>
+                <p class="blog-desc">Explore free and paid tools that can improve your academic research quality.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/ZRpnZm6D/image.png" alt="Blog 3">
+            <div class="blog-content">
+                <h3 class="blog-title">How to Avoid Plagiarism in Assignments</h3>
+                <p class="blog-desc">Learn how to cite properly and use original content to stay plagiarism-free.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/d0RTZKK7/image.png" alt="Blog 4">
+            <div class="blog-content">
+                <h3 class="blog-title">Understanding Turnitin: A Student Guide</h3>
+                <p class="blog-desc">Everything you need to know about Turnitin and how it evaluates your work.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/d4JTvrmj/image.png" alt="Blog 5">
+            <div class="blog-content">
+                <h3 class="blog-title">Time Management for Busy Students</h3>
+                <p class="blog-desc">Tips and tools to stay productive and reduce academic stress.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/QFZtfN4w/image.png" alt="Blog 6">
+            <div class="blog-content">
+                <h3 class="blog-title">Common Mistakes in Report Writing</h3>
+                <p class="blog-desc">Avoid these pitfalls to improve clarity and professionalism in your reports.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/jZJZhmX2/image.png" alt="Blog 7">
+            <div class="blog-content">
+                <h3 class="blog-title">SAT vs IELTS: Which is Right for You?</h3>
+                <p class="blog-desc">A comparison guide for students choosing between two popular tests.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/nMYtSPgR/image.png" alt="Blog 8">
+            <div class="blog-content">
+                <h3 class="blog-title">Scholarship Application Tips</h3>
+                <p class="blog-desc">Craft a compelling application that increases your chances of winning.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/FqYKQggP/image.png" alt="Blog 9">
+            <div class="blog-content">
+                <h3 class="blog-title">Top Free Online Learning Platforms</h3>
+                <p class="blog-desc">Upgrade your skills through courses from top universities and platforms.</p>
+            </div>
+        </div>
+        <div class="blog-card" onclick="showNotice()">
+            <img src="https://i.ibb.co/Lh6J9dD1/image.png" alt="Blog 10">
+            <div class="blog-content">
+                <h3 class="blog-title">Beginner’s Guide to Academic Research</h3>
+                <p class="blog-desc">Learn how to define, plan, and carry out your academic investigations effectively.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="notice" class="notice">
+    <p>You need to register for a member account. Please contact us to register now!!!</p>
+    <a href="Blog & News.html" class="notice-link">← Back</a>
+</div>
+
+<style>
+    .notice {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        z-index: 1000;
+        animation: fadeIn 0.5s ease;
+    }
+
+    .notice p {
+        margin: 0 0 10px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .notice-link {
+        text-decoration: none;
+        color: #021c17;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .notice-link:hover {
+        color: #011405;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<script>
+    function showNotice() {
+        const notice = document.getElementById('notice');
+        notice.style.display = 'block';
+    }
+</script>
+
+    <div class="pagination">
+      <a href="Blog & News.html" class="prev" title="Previous Page">&laquo;</a>
+      <a href="Blog & News.html" class="page active" title="Page 1">1</a>
+      <a href="page2.html" class="page" title="Page 2">2</a>
+      <a href="page2.html" class="next" title="Next Page">&raquo;</a>
+    </div>
+  </div>
+
+  <style>
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    .pagination a {
+      text-decoration: none;
+      color: #0A9274;
+      font-weight: bold;
+      padding: 8px 12px;
+      border: 1px solid #0A9274;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .pagination a:hover {
+      background-color: #0A9274;
+      color: white;
+    }
+
+    .pagination .active {
+      background-color: #0A9274;
+      color: white;
+    }
+
+    .pagination .prev, .pagination .next {
+      font-size: 18px;
+    }
+  </style>
+<footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 GIGI Assignment Support. Powered by top global experts.</p>
+      <p>📍 District 1, Ho Chi Minh City, Vietnam | ✉️ support@gigiassignments.com | 📞 +84 901 001 001</p>
+    <p><a href="index.html" style="color: #a0ffe5; text-decoration: underline;" data-en="← Back to Home" data-vi="← Quay lại Trang Chủ">← Back to Home</a></p>
+</footer>
+  </body>
+</html>
+  
+  <!-- Floating Action Buttons -->
+  <div class="fab-container">
+    <a href="https://zalo.me/84901001001" target="_blank" class="fab fab-zalo" title="Chat on Zalo">
+      <i class="fas fa-comment-dots"></i>
+    </a>
+    <a href="https://wa.me/84901001001" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="mailto:support@gigiassignments.com" class="fab fab-email" title="Send Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <style>
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+  
+    .fab {
+      width: 50px;
+      height: 50px;
+      background-color: #25d366; /* Default WhatsApp green */
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  
+    .fab:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  
+    .fab-zalo {
+      background-color: #1877f2; /* Updated Zalo blue */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-zalo:hover {
+      background-color: #145dbf; /* Darker Zalo blue */
+    }
+  
+    .fab-whatsapp {
+      background-color: #25d366; /* Correct WhatsApp green */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-whatsapp:hover {
+      background-color: #1ebe57; /* Darker WhatsApp green */
+    }
+  
+    .fab-email {
+      background-color: #ea4335; /* Updated Email red */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-email:hover {
+      background-color: #c5221f; /* Darker Email red */
+    }
+  </style>
+  </body>
+  </html>.
