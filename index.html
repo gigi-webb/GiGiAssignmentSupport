@@ -5,370 +5,362 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>GIGI Assignment Support | Academic Writing Experts</title>
   <meta name="description" content="GIGI provides top-level academic writing, top grade, plagiarism-free, on time, and assignment support globally." />
   <link rel="icon" href="https://i.ibb.co/sHzd7ZK/gigi-favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   
   <style>
- 
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header, footer, section {
-      padding: 2rem;
-      text-align: center;
-    }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-    .language-switcher {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: #00a86b;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .btn-primary {
-      background: #00a86b;
-      color: white;
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    .btn-primary:hover {
-      background: #007d58;
-    }
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .card {
-      background: #75e6c4;
-      padding: 1rem;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
-  <button class="language-switcher" onclick="switchLanguage()">VN / EN</button>
-  
-  <script>
-    function switchLanguage() {
-      const elements = document.querySelectorAll('[data-en]');
-      const currentLang = document.body.getAttribute('lang') || 'en';
-      const newLang = currentLang === 'en' ? 'vi' : 'en';
-      document.body.setAttribute('lang', newLang);
-      elements.forEach(el => {
-        el.textContent = el.getAttribute(`data-${newLang}`);
-      });
-    }
-  </script>
-</body>
-</html>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
 
-  <title>GIGI Assignment Support | Academic Writing Experts</title>
-  <meta name="description" content="GIGI provides top-level academic writing, top grade, plagiarism-free, on time, and assignment support globally.">
-  <link rel="icon" href="https://i.ibb.co/sHzd7ZK/gigi-favicon.png">
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition: color 0.5s ease, transform 0.5s ease;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  p, input, select, textarea, label {
+    font-size: 1rem;
+    transition: color 0.5s ease;
+  }
 
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+  }
 
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  /* Headline Animation */
+  h2 {
+    position: relative;
+    overflow: hidden;
+  }
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #00a86b;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+  h2:hover::after {
+    transform: scaleX(1);
+  }
+  h2:hover {
+    transform: translateY(-5px);
+  }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
+  /* Top Banner */
+  .top-banner {
+    background: #00a86b;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .top-banner a {
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.5s ease;
+  }
 
-    h1, h2, h3 {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
+  /* Header */
+  .brand-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
 
-    p, input, select, textarea, label {
-      font-size: 1rem;
-    }
+  .brand-logo {
+    height: 100px;
+    width: auto;
+    transition: transform 0.5s ease;
+  }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 1rem;
-    }
+  .brand-logo:hover {
+    transform: scale(1.1);
+  }
 
-    /* Top Banner */
-    .top-banner {
-      background: #00a86b;
-      color: white;
-      text-align: center;
-      padding: 0.5rem;
-      font-size: 0.9rem;
-    }
-    .top-banner a {
-      color: yellow;
-      font-weight: bold;
-      text-decoration: underline;
-    }
+  .brand-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4CAF81;
+    font-family: 'Poppins', sans-serif;
+  }
 
-    /* Header */
-    .brand-logo-container {
-  display: flex;
-  align-items: center;
-  gap: 1px; /* space between logo and text */
-}
+  .header {
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 2rem;
+    color: #00a86b;
+    font-weight: bold;
+    transition: color 0.5s ease;
+  }
+  .nav a {
+    margin-left: 2rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.5s ease;
+  }
+  .nav a:hover {
+    color: #00a86b;
+  }
+  .nav a.active {
+    color: #00a86b;
+    font-weight: bold;
+  }
 
-.brand-logo {
-  height: 100px; /* adjust as needed */
-  width: auto;
-}
+  /* Hero */
+  .hero {
+    background: linear-gradient(to right, #004d40, #26a69a);
+    color: white;
+    padding: 3rem 0 6rem;
+    position: relative;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    position: relative;
+    top: -40px;
+  }
+  .hero-text {
+    flex: 1;
+    padding-top: 1rem;
+  }
+  .hero-form {
+    flex: 1;
+    background: url('https://i.ibb.co/v6DXBSxP/image.png') no-repeat center/cover;
+    color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background-size: cover;
+    backdrop-filter: blur(6px);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+  }
+  .hero-form:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+  }
+  .hero-form h2 {
+    color: #f7f4e9;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .hero-form input,
+  .hero-form select,
+  .hero-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 2px solid #00a86b;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-weight: 500;
+    transition: border-color 0.5s ease, background-color 0.5s ease;
+  }
+  .hero-form input:focus,
+  .hero-form select:focus,
+  .hero-form textarea:focus {
+    border-color: #007d58;
+    background: #fff;
+    outline: none;
+  }
+  .input-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .hero-form label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #004d40;
+  }
 
-.brand-name {
-  font-size: 24px;
-  font-weight: 700;
-  color: #4CAF81; /* your green color */
-  font-family: 'Poppins', sans-serif;
-}
+  /* Buttons */
+  .btn-primary, .btn-secondary {
+    background: #00a86b;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary:hover, .btn-secondary:hover {
+    background: #007d58;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+  }
 
-    .header {
-      background: white;
-      padding: 1rem 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 2rem;
-      color: #00a86b;
-      font-weight: bold;
-    }
-    .nav a {
-      margin-left: 2rem;
-      color: #333;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .nav a:hover {
-      color: #00a86b;
-    }
+  /* Sections */
+  section {
+    padding: 5rem 0;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .feedback-grid, .guarantees-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .feedback-card, .guarantee-card {
+    background: #ccebd7;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  .feedback-card:hover, .guarantee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  .feedback-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.5s ease;
+  }
+  .feedback-card img:hover {
+    transform: scale(1.05);
+  }
 
-    /* Hero */
-    .hero {
-      background: linear-gradient(to right, #004d40, #26a69a);
-      color: white;
-      padding: 3rem 0 6rem; /* Reduced top padding */
-      position: relative;
-    }
+  /* Partners */
+  .partners-logos {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  .partners-logos img {
+    height: 60px;
+    transition: transform 0.5s ease;
+  }
+  .partners-logos img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Contact Form */
+  .vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  /* Footer */
+  .footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
     .hero-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: flex-start;
-      position: relative;
-      top: -40px; /* Move whole content upwards */
-    }
-    .hero-text {
-      flex: 1;
-      padding-top: 1rem;
-    }
-    .hero-form {
-      flex: 1;
-      background: url('https://i.ibb.co/v6DXBSxP/image.png')    no-repeat center/cover;
-      color: black;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      background-size: cover;
-      backdrop-filter: blur(6px);
-    }
-    .hero-form h2 {
-      color: #f7f4e9;
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-      font-weight: 700;
-    }
-    .hero-form input,
-    .hero-form select,
-    .hero-form textarea {
-      width: 100%;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border: 2px solid #00a86b;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.9);
-      color: #333;
-      font-weight: 500;
-    }
-    .hero-form input:focus,
-    .hero-form select:focus,
-    .hero-form textarea:focus {
-      border-color: #007d58;
-      background: #fff;
-      outline: none;
-    }
-    .input-group {
-      display: flex;
-      gap: 0.5rem;
-    }
-    .hero-form label {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      display: block;
-      color: #004d40;
-    }
-
-    /* Buttons */
-    .btn-primary, .btn-secondary {
-      background: #00a86b;
-      color: white;
-      padding: 0.8rem 2rem;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      cursor: pointer;
-      border: none;
-    }
-    .btn-primary:hover, .btn-secondary:hover {
-      background: #007d58;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    }
-
-    /* Sections */
-    section {
-      padding: 5rem 0;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
     }
     .feedback-grid, .guarantees-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
     }
-    .feedback-card, .guarantee-card {
-      background: #ccebd7;
-      padding: 2rem;
-      border-radius: 8px;
-      width: 250px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .feedback-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    /* Partners */
     .partners-logos {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      margin: 2rem 0;
-      flex-wrap: wrap;
+    flex-direction: column;
     }
-    .partners-logos img {
-      height: 60px;
-    }
-
-    /* Contact Form */
-    .vertical-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    /* Footer */
-    .footer {
-      background: #004d40;
-      color: white;
-      text-align: center;
-      padding: 2rem 0;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero-content {
-        flex-direction: column;
-        align-items: center;
-      }
-      .feedback-grid, .guarantees-grid {
-        flex-direction: column;
-        align-items: center;
-      }
-      .partners-logos {
-        flex-direction: column;
-      }
-    }
+  }
   </style>
 </head>
 
 <body>
-<button class="language-switcher" onclick="switchLanguage()">VN / EN</button>
+<div style="position: absolute; top: 10px; right: 10px;">
+  <button class="language-switcher" onclick="switchLanguage()" style="background: #00a86b; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 600; cursor: pointer; transition: background 0.3s ease;">
+  VN / EN
+  </button>
+</div>
+
+<script>
+  function switchLanguage() {
+  const elements = document.querySelectorAll('[data-en], [data-vi]');
+  elements.forEach(el => {
+    const currentLang = el.getAttribute('data-en') === el.textContent.trim() ? 'vi' : 'en';
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+  }
+</script>
+
   
 <!-- Top Banner -->
 <div class="top-banner">
  
-    <p data-en="🎁 New customer? Save 15% instantly!" data-vi="🎁 Khách hàng mới? Tiết kiệm ngay 15%!">
-    🎁 New customer? Save 15% instantly!
+  <p data-en="🎁 New customer? Save 15% instantly!" data-vi="🎁 Khách hàng mới? Tiết kiệm ngay 15%!">
+  🎁 New customer? Save 15% instantly!
   </p>
 </div>
   
-    <p data-en="📌📌 SUPER PREFERENTIAL COST WITH TOP QUALITY, you cannot find anywhere an academic writing assistant who understands you better than us!!!🎉🎉" data-vi="📌📌CHI PHÍ SIÊU ƯU ĐÃI VỚI CHẤT LƯỢNG HÀNG ĐẦU, bạn không thể tìm thấy ở đâu một trợ lý viết học thuật hiểu bạn hơn chúng tôi!!🎉🎉">
+  <p data-en="📌📌 SUPER PREFERENTIAL COST WITH TOP QUALITY, you cannot find anywhere an academic writing assistant who understands you better than us!!!🎉🎉" data-vi="📌📌CHI PHÍ SIÊU ƯU ĐÃI VỚI CHẤT LƯỢNG HÀNG ĐẦU, bạn không thể tìm thấy ở đâu một trợ lý viết học thuật hiểu bạn hơn chúng tôi!!🎉🎉">
    📌📌 SUPER PREFERENTIAL COST WITH TOP QUALITY, you cannot find anywhere an academic writing assistant who understands you better than us!!!🎉🎉
   </p>
 </div>
@@ -378,16 +370,16 @@
 <header class="header">
   <div class="brand-logo-container">
   <img src="https://i.ibb.co/HfNXn5WS/image.png" alt="GIGI Logo" class="brand-logo" />
-</div>
+
   <div class="container header-container">
-    <div class="logo" >GIGI Assignment Support</div>
-    <nav class="nav">
-      <a href="#" data-en="Home" data-vi="Trang Chủ">Home</a>
-      <a href="#services" data-en="About us" data-vi="Về Chúng Tôi">About us</a>
-      <a href="#feedback" data-en="Services" data-vi="Dịch Vụ">Services</a>
-      <a href="#blog" data-en="Free Materials" data-vi="Tài Liệu Miễn Phí">Free Materials</a>
-      <a href="#order" data-en="Our Careers" data-vi="Nghề Nghiệp">Our Careers</a>
-    </nav>
+  <div class="logo" >GIGI Assignment Support</div>
+  <nav class="nav">
+    <a href="index.html" class="active" data-en="Home" data-vi="Trang Chủ">Home</a>
+    <a href="Aboutus.html" data-en="About us" data-vi="Về Chúng Tôi">About us</a>
+    <a href="Services.html" data-en="Services" data-vi="Dịch Vụ">Services</a>
+    <a href="Blog & News.html" data-en="Blog & News" data-vi="Blog & Tin Tức">Blog & News</a>
+    <a href="Ourcareers.html" data-en="Our Careers" data-vi="Nghề Nghiệp">Our Careers</a>
+  </nav>
   </div>
 </header>
 
@@ -398,9 +390,9 @@
       <h1 data-en="TOP QUALITY ACADEMIC SUPPORT" data-vi="HỖ TRỢ HỌC THUẬT CHẤT LƯỢNG CAO">
         TOP QUALITY ACADEMIC SUPPORT
       </h1>
-      <p data-en="International academic services with fast delivery, originality guarantee, and top grades!"
-         data-vi="Dịch vụ học thuật quốc tế với giao hàng nhanh, đảm bảo tính nguyên bản và điểm số cao!">
-        International academic services with fast delivery, originality guarantee, and top grades!
+      <p data-en="🎯Get international academic services with guaranteed originality, top grades, and all at unbeatable, market-leading prices 👍"
+         data-vi="🎯Nhận dịch vụ học thuật quốc tế với sự đảm bảo tính nguyên bản, điểm số cao và tất cả đều có mức giá không thể cạnh tranh hơn, dẫn đầu thị trường về mức giá 👍">
+         🎯Get international academic services with guaranteed originality, top grades, and all at unbeatable, market-leading prices 👍      
       </p>
       
 <a href="#order" class="btn-primary" data-en="Book Now" data-vi="Đặt Ngay">Book Now</a>
@@ -432,16 +424,34 @@
   <input type="tel" id="phone-number" name="Phone Number" required placeholder="Phone Number" pattern="\+?[0-9\s\-]+" title="Enter a valid phone number">
   <select id="type-of-work" name="type-of-work" required>
     <option value="">Select Type of Work</option>
-    <option>Essay</option>
-    <option>Report</option>
-    <option>Assignment</option>
-    <option>Presentation</option>
-    <option>Dissertation</option>
-    <option>Translation</option>
-    <option>Resume / CV / Cover Letter</option>
-    <option>Ghostwriting</option>
-    <option>Copywriting</option>
-    <option>Others</option>
+    <optgroup label="Academic Writing Services">
+      <option>Assignment Writing</option>
+      <option>Essay Writing</option>
+      <option>Literature Review Writing</option>
+      <option>PowerPoint Presentation Design</option>
+      <option>Script Writing</option>
+      <option>Thesis Writing</option>
+      <option>Report Writing</option>
+      <option>Grammarly Checking</option>
+      <option>Proofreading</option>
+      <option>Turnitin Checking</option>
+      <option>Cover Letter Writing</option>
+      <option>CV/Resume Writing Service</option>
+    </optgroup>
+    <optgroup label="Business Writing Services">
+      <option>Business Plan Writing</option>
+      <option>SEO Writing</option>
+      <option>Content Writing</option>
+      <option>Website Design</option>
+    </optgroup>
+    <optgroup label="General Writing Services">
+      <option>Customize to Each Order</option>
+      <option>Translation</option>
+      <option>Others</option>
+    </optgroup>
+  </select>
+  <textarea id="specify-order" name="Specify Order" placeholder="Please specify your order" rows="4"></textarea>
+
   </select>
 
   <label for="deadline-date">Deadline Date </label>
@@ -608,7 +618,7 @@ src="https://i.ibb.co/G3RvkBZR/image.png" alt="Deakin University">
       <img                                   src="https://i.ibb.co/93V7xGTw/image.png" alt="Toronto University"> 
       <img  
 src="https://i.ibb.co/GfjF6kgY/image.png" alt="ISB University"> 
-      <img            
+      <img />
     </div>
     <p>Trusted by top universities worldwide!</p>
   </div>
@@ -620,7 +630,7 @@ src="https://i.ibb.co/GfjF6kgY/image.png" alt="ISB University">
 <section class="blogs" id="blog">
   <div class="container">
      <h2 data-en="Blog & News" data-vi="Blog & Tin Tức">Blog & News</h2>
-    <a href="#" class="btn-primary" data-en="View Latest Articles" data-vi="Xem Bài Viết Mới Nhất">View Latest Articles</a>
+    <a href="Blog & News.html" class="btn-primary" data-en="View Latest Articles" data-vi="Xem Bài Viết Mới Nhất">View Latest Articles</a>
 
   </div>
 </section>
@@ -647,3 +657,257 @@ src="https://i.ibb.co/GfjF6kgY/image.png" alt="ISB University">
 
 </body>
 </html>.
+<!-- Floating Action Buttons -->
+<div class="fab-container">
+  <a href="https://zalo.me/84901001001" target="_blank" class="fab fab-zalo" title="Chat on Zalo">
+    <i class="fas fa-comment-dots"></i>
+  </a>
+  <a href="https://wa.me/84901001001" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="mailto:support@gigiassignments.com" class="fab fab-email" title="Send Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+<style>
+  .fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  .fab {
+    width: 50px;
+    height: 50px;
+    background-color: #25d366; /* Default WhatsApp green */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .fab-zalo {
+    background-color: #1877f2; /* Updated Zalo blue */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .fab-zalo:hover {
+    background-color: #145dbf; /* Darker Zalo blue */
+  }
+
+  .fab-whatsapp {
+    background-color: #25d366; /* Correct WhatsApp green */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .fab-whatsapp:hover {
+    background-color: #1ebe57; /* Darker WhatsApp green */
+  }
+
+  .fab-email {
+    background-color: #ea4335; /* Updated Email red */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .fab-email:hover {
+    background-color: #c5221f; /* Darker Email red */
+  }
+</style>
+
+<!-- Chat Box -->
+<div class="chat-box-container" style="display: none;"></div>
+  <div class="chat-box-header">
+    <h4>Live Support</h4>
+    <button class="chat-box-close" onclick="toggleChatBox()">×</button>
+  </div>
+  <div class="chat-box-body">
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-message bot">
+        <p>Welcome! How can we assist you today?</p>
+      </div>
+    </div>
+    <form id="chat-form" onsubmit="sendMessage(event)">
+      <input type="text" id="chat-input" placeholder="Type your message..." required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<style>
+  .chat-box-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  .chat-box-header {
+    background: #00a86b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chat-box-header h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .chat-box-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .chat-box-body {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f8f9fa;
+  }
+
+  .chat-message {
+    margin-bottom: 10px;
+  }
+
+  .chat-message.bot {
+    text-align: left;
+  }
+
+  .chat-message.user {
+    text-align: right;
+  }
+
+  .chat-message p {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    margin: 0;
+  }
+
+  .chat-message.bot p {
+    background: #00a86b;
+    color: white;
+  }
+
+  #chat-form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+
+  #chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  #chat-form button {
+    background: #00a86b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #chat-form button:hover {
+    background: #007d58;
+  }
+</style>
+
+<script>
+  const faqResponses = {
+    "services": "We offer academic writing, proofreading, and business writing services.",
+    "pricing": "Our pricing is competitive and depends on the type of service and deadline.",
+    "contact": "You can reach us at support@gigiassignments.com or call +84 901 001 001.",
+    "deadline": "We ensure on-time delivery and offer rush options within 12–24 hours."
+  };
+
+  function toggleChatBox() {
+    const chatBox = document.querySelector('.chat-box-container');
+    chatBox.style.display = chatBox.style.display === 'none' ? 'flex' : 'none';
+  }
+
+  function sendMessage(event) {
+    event.preventDefault();
+    const input = document.getElementById('chat-input');
+    const message = input.value.trim().toLowerCase();
+    if (message) {
+      const chatMessages = document.getElementById('chat-messages');
+      const userMessage = document.createElement('div');
+      userMessage.classList.add('chat-message', 'user');
+      userMessage.innerHTML = `<p>${input.value}</p>`;
+      chatMessages.appendChild(userMessage);
+
+      const botMessage = document.createElement('div');
+      botMessage.classList.add('chat-message', 'bot');
+      botMessage.innerHTML = `<p>${faqResponses[message] || "Sorry, I didn't understand that. Please ask about services, pricing, contact, or deadlines."}</p>`;
+      chatMessages.appendChild(botMessage);
+
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      input.value = '';
+    }
+  }
+</script>
+
+<!-- Chat Toggle Button -->
+<button onclick="toggleChatBox()" class="chat-toggle-btn">
+  <i class="fas fa-comments"></i> Chat with us
+</button>
+
+<style>
+  .chat-toggle-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #00a86b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .chat-toggle-btn:hover {
+    background: #007d58;
+  }
+</style>
