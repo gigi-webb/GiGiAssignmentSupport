@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="About Us | GIGI Assignment Support" data-vi="Về Chúng Tôi | Hỗ Trợ GIGI">About Us | GIGI Assignment Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+        header, footer {
+            background: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+        header h1, footer p {margin: 0;}
+        nav {text-align: center; margin-top: 1rem;}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {color: #00a86b;} /* Changed hover color to green */
+        nav a.active {
+            color: #00a86b;
+            font-weight: bold;
+            background-color: rgba(0, 168, 107, 0.2); /* Highlight effect */
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+        }
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #007d58;
+            margin-bottom: 2rem;
+            transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .section-title:hover {
+            color: #004d40;
+            transform: scale(1.1);
+        }
+        .section-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .section-content p {margin-bottom: 1rem;}
+        .section-image {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .section-image img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+        .section-image img:hover {
+            transform: scale(1.05);
+        }
+        .language-switcher {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: #00a86b;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .language-switcher:hover {
+            background: #007d58;
+        }
+        @media (max-width: 768px) {
+            .section-content {text-align: center;}
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("loaded");
+        });
+
+        window.addEventListener("beforeunload", (e) => {
+            document.body.classList.remove("loaded");
+        });
+    </script>
+</head>
+<body>
+    <button class="language-switcher" onclick="switchLanguage()">VN / EN</button>
+    
+    <header>
+        <h1><a href="index.html" style="color: white; text-decoration: none;" data-en="GIGI Assignment Support" data-vi="GIGI Assignment Support">GIGI Assignment Support</a></h1>
+        <nav>
+            <a href="index.html" data-en="Home" data-vi="Trang Chủ">Home</a>
+            <a href="Aboutus.html" class="active" data-en="About Us" data-vi="Về Chúng Tôi">About Us</a>
+            <a href="Services.html" data-en="Services" data-vi="Dịch Vụ">Services</a>
+            <a href="Blog & News.html" data-en="Blog & News" data-vi="Blog & Tin Tức">Blog & News</a>
+            <a href="Ourcareers.html" data-en="Our Careers" data-vi="Việc Làm">Our Careers</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="section-title" data-en="Our Mission" data-vi="Sứ Mệnh Của Chúng Tôi">Our Mission</h2>
+        <div class="section-content">
+            <p data-en="To empower students worldwide by delivering high-quality, plagiarism-free, and deadline-oriented academic solutions tailored to each individual's academic journey." 
+                 data-vi="Trao quyền cho sinh viên toàn cầu bằng cách cung cấp các giải pháp học thuật chất lượng cao, không đạo văn và đúng hạn, phù hợp với hành trình học tập của từng cá nhân.">
+                To empower students worldwide by delivering high-quality, plagiarism-free, and deadline-oriented academic solutions tailored to each individual's academic journey.
+            </p>
+        </div>
+        <div class="section-image">
+            <img src="https://i.ibb.co/SwcY9DFP/image.png" alt="Our Mission Image">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title" data-en="Our Vision" data-vi="Tầm Nhìn Của Chúng Tôi">Our Vision</h2>
+        <div class="section-content">
+            <p data-en="To become the leading academic support brand known for innovation, integrity, and student-centered service across the globe, helping learners thrive in a competitive environment." 
+                 data-vi="Trở thành thương hiệu hỗ trợ học thuật hàng đầu được biết đến với sự đổi mới, liêm chính và dịch vụ lấy sinh viên làm trung tâm trên toàn cầu, giúp người học phát triển trong môi trường cạnh tranh.">
+                To become the leading academic support brand known for innovation, integrity, and student-centered service across the globe, helping learners thrive in a competitive environment.
+            </p>
+        </div>
+        <div class="section-image">
+            <img src="https://i.ibb.co/d0T7f1cM/image.png" alt="Our Vision Image">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title" data-en="Core Values" data-vi="Giá Trị Cốt Lõi">Core Values</h2>
+        <div class="section-content">
+            <ul>
+                <li data-en="<strong>Integrity:</strong> We maintain honesty and ethics in all our work." 
+                        data-vi="<strong>Liêm Chính:</strong> Chúng tôi duy trì sự trung thực và đạo đức trong tất cả công việc của mình.">
+                    <strong>Integrity:</strong> We maintain honesty and ethics in all our work.
+                </li>
+                <li data-en="<strong>Excellence:</strong> We deliver high-quality academic outputs tailored to university standards." 
+                        data-vi="<strong>Xuất Sắc:</strong> Chúng tôi cung cấp các sản phẩm học thuật chất lượng cao phù hợp với tiêu chuẩn đại học.">
+                    <strong>Excellence:</strong> We deliver high-quality academic outputs tailored to university standards.
+                </li>
+                <li data-en="<strong>Reliability:</strong> Deadlines and originality are never compromised." 
+                        data-vi="<strong>Đáng Tin Cậy:</strong> Chúng tôi không bao giờ thỏa hiệp về thời hạn và tính nguyên bản.">
+                    <strong>Reliability:</strong> Deadlines and originality are never compromised.
+                </li>
+                <li data-en="<strong>Client Focus:</strong> We prioritize personalized experiences and satisfaction." 
+                        data-vi="<strong>Tập Trung Vào Khách Hàng:</strong> Chúng tôi ưu tiên trải nghiệm cá nhân hóa và sự hài lòng.">
+                    <strong>Client Focus:</strong> We prioritize personalized experiences and satisfaction.
+                </li>
+            </ul>
+        </div>
+        <div class="section-image">
+            <img src="https://i.ibb.co/ZpWZgN05/image.png" alt="Core Values Image">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title" data-en="Our Writing Expert Team" data-vi="Đội Ngũ Chuyên Gia Viết Của Chúng Tôi">Our Writing Expert Team</h2>
+        <div class="section-content">
+            <p data-en="🌍 Global Experts: Carefully selected professionals from around the world" data-vi="🌍 Chuyên gia toàn cầu : Các chuyên gia được tuyển chọn kỹ lưỡng từ khắp nơi trên thế giới">🌍 Global Experts: Carefully selected professionals from around the world</p>
+            <p data-en="📝 Qualified Writers: All team members hold IELTS 6.5+ or equivalent English proficiency and GPA 3.0+" data-vi="📝 Đội ngũ biên tập viên có trình độ : Tất cả các thành viên trong nhóm đều có trình độ tiếng Anh IELTS 6.5 trở lên hoặc tương đương và điểm trung bình trên 3.0">📝 Qualified Writers: All team members hold IELTS 6.5+ or equivalent English proficiency and GPA 3.0+</p>
+            <p data-en="🎓 Diverse Backgrounds: Specialists across disciplines—business, science, humanities, and more" data-vi="🎓 Có nhiều nền tảng khác nhau : Chuyên gia trong nhiều lĩnh vực—kinh doanh, khoa học, nhân văn, v.v">🎓 Diverse Backgrounds: Specialists across disciplines—business, science, humanities, and more            </p>
+            <p data-en="📚 Trained for Excellence: Regular multidisciplinary training to meet international academic standards" data-vi="📚 Được đào tạo để đạt trình độ xuất sắc : Đào tạo đa ngành thường xuyên để đáp ứng các tiêu chuẩn học thuật quốc tế">📚 Trained for Excellence: Regular multidisciplinary training to meet international academic standards</p>
+            <p data-en="✅ Proven Experience: Writers with hands-on academic writing experience many years and top-grade delivery" data-vi="✅ Kinh nghiệm đã được chứng minh : Các nhà văn có kinh nghiệm nhiều năm viết học thuật thực tế và chất lượng bài viết hàng đầu">✅ Proven Experience: Writers with hands-on academic writing experience many years and top-grade delivery</p>
+
+        </div>
+        <div class="section-image">
+            <img src="https://i.ibb.co/v4gwn2ZZ/image.png" alt="Achievements Image">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title" data-en="Achievements" data-vi="Thành Tựu">Achievements</h2>
+        <div class="section-content">
+            <p data-en="✔️ 5000+ satisfied clients globally" data-vi="✔️ Hơn 5000 khách hàng hài lòng trên toàn cầu">✔️ 8000+ satisfied clients globally</p>
+            <p data-en="✔️ 3000+ successful academic projects delivered" data-vi="✔️ Hơn 3000 dự án học thuật thành công đã được giao">✔️ 6000+ successful academic projects delivered</p>
+            <p data-en="✔️ 92.8% satisfaction rate based on verified reviews" data-vi="✔️ Tỷ lệ hài lòng 92.8% dựa trên các đánh giá đã xác minh">✔️ 98.8% satisfaction rate based on verified reviews</p>
+            <p data-en="✔️ Academic support across 10+ countries including Vietnam, Germany, UK, Australia, US, and Singapore" 
+                 data-vi="✔️ Hỗ trợ học thuật tại hơn 10 quốc gia bao gồm Việt Nam, Đức, Anh, Úc, Mỹ và Singapore">✔️ Academic support across 10+ countries including Vietnam, Germany, UK, Australia, US, and Singapore</p>
+        </div>
+        <div class="section-image">
+            <img src="https://i.ibb.co/v4gwn2ZZ/image.png" alt="Achievements Image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 GIGI Assignment Support. Powered by top global experts.</p>
+      <p>📍 District 1, Ho Chi Minh City, Vietnam | ✉️ support@gigiassignments.com | 📞 +84 901 001 001</p>
+    <p><a href="index.html" style="color: #a0ffe5; text-decoration: underline;" data-en="← Back to Home" data-vi="← Quay lại Trang Chủ">← Back to Home</a></p>
+</footer>
+    </div>
+  </footer>
+  
+  </body>
+  </html>.
+  <!-- Floating Action Buttons -->
+  <div class="fab-container">
+    <a href="https://zalo.me/84901001001" target="_blank" class="fab fab-zalo" title="Chat on Zalo">
+      <i class="fas fa-comment-dots"></i>
+    </a>
+    <a href="https://wa.me/84901001001" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="mailto:support@gigiassignments.com" class="fab fab-email" title="Send Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <style>
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+  
+    .fab {
+      width: 50px;
+      height: 50px;
+      background-color: #25d366; /* Default WhatsApp green */
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  
+    .fab:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  
+    .fab-zalo {
+      background-color: #1877f2; /* Updated Zalo blue */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-zalo:hover {
+      background-color: #145dbf; /* Darker Zalo blue */
+    }
+  
+    .fab-whatsapp {
+      background-color: #25d366; /* Correct WhatsApp green */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-whatsapp:hover {
+      background-color: #1ebe57; /* Darker WhatsApp green */
+    }
+  
+    .fab-email {
+      background-color: #ea4335; /* Updated Email red */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-email:hover {
+      background-color: #c5221f; /* Darker Email red */
+    }
+  </style>
+
+    <script>
+        function switchLanguage() {
+            const elements = document.querySelectorAll('[data-en]');
+            const currentLang = document.body.getAttribute('lang') || 'en';
+            const newLang = currentLang === 'en' ? 'vi' : 'en';
+            document.body.setAttribute('lang', newLang);
+            elements.forEach(el => {
+                el.innerHTML = el.getAttribute('data-' + newLang);
+            });
+            const button = document.querySelector('.language-switcher');
+            button.innerHTML = newLang === 'en' ? 'VN / EN' : 'EN / VN';
+        }
+        
+    </script>
+</body>
+</html>
