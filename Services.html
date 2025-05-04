@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiGi Assignment Supports - Our Services</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        :root {
+            --primary: hwb(163 3% 68%);
+            --secondary: #0f172a;
+            --background: #f8fafc;
+            --white: #ffffff;
+            --accent: hwb(163 3% 68%);
+            --font: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            font-family: var(--font);
+            margin: 0;
+            background: var(--background);
+            color: var(--secondary);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-size: 1rem; /* Reduced font size */
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold; /* Make navigation text bold */
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: lab(61.67% -55.99 46.59); /* Green color */
+            text-decoration: none; /* No underline */
+        }
+
+        nav a.active {
+            color: lab(61.67% -55.99 46.59); /* Highlight active link */
+            font-weight: bold;
+        }
+
+        .language-toggle {
+            cursor: pointer;
+            background: var(--white);
+            color: var(--primary);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .language-toggle:hover {
+            background: #f0fdf4;
+            color: hwb(163 3% 68%);
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            animation: fadeIn 1.2s ease-in;
+        }
+
+        .section h2 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .service-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem; /* Reduced font size */
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        footer a {
+            color: #eef3f1; /* Green mint color */
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #2EE59Dcc; /* Slightly transparent green mint */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div><strong>GiGi Assignment Supports</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Aboutus.html">About Us</a>
+      <a href="Services.html" class="active">Services</a>
+      <a href="Blog & News.html">Blog & News</a>
+      <a href="Ourcareers.html">Our Careers</a>
+    </nav>
+  </header>
+
+<section class="section" id="academic">
+    <h2 data-en="Academic Writing Services">Academic Writing Services</h2>
+    <div class="service-group">
+        <div class="service-card" onclick="redirectToHome('index.html')">Assignment Writing Service</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Essay Writing Service</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Literature Review Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">PowerPoint Presentation Design</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Script Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Thesis Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Report Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Grammarly Checking</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Proofreading</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Turnitin Checking</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Cover Letter Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">CV/Resume Writing</div>
+    </div>
+</section>
+
+<section class="section" id="business">
+    <h2 data-en="Business Writing Services">Business Writing Services</h2>
+    <div class="service-group">
+        <div class="service-card" onclick="redirectToHome('index.html')">Business Plan Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">SEO Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Content Writing</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Website Design</div>
+    </div>
+</section>
+
+<section class="section" id="general">
+    <h2>General Writing Services</h2>
+    <div class="service-group">
+        <div class="service-card" onclick="redirectToHome('index.html')">Custom Writing to Your Needs</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Translation</div>
+        <div class="service-card" onclick="redirectToHome('index.html')">Academic Style Formatting</div>
+    </div>
+</section>
+
+<script>
+    function redirectToHome(url) {
+        document.body.style.opacity = 1;
+        document.body.style.transition = "opacity 0.8s ease-in-out";
+        document.body.style.opacity = 0;
+
+        setTimeout(() => {
+            window.location.href = url;
+        }, 800); // Match the transition duration
+    }
+</script>
+  
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm md:text-base">© 2025 GIGI Assignment Support. Powered by top global experts.</p>
+        <p class="text-sm md:text-base mt-2">📍 District 1, Ho Chi Minh City, Vietnam | ✉️ <a href="mailto:support@gigiassignments.com" class="text-green-400 hover:text-green-300">support@gigiassignments.com</a> | 📞 <a href="tel:+84901001001" class="text-green-400 hover:text-green-300">+84 901 001 001</a></p>
+        <p class="mt-4"><a href="index.html" class="text-green-400 hover:text-green-300 underline">← Back to Home</a></p>
+    </div>
+</footer>
+
+
+<!-- AOS Library JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true });
+</script>
+<script>
+    // Apply fade-in effect to the entire site on page load
+    document.body.style.opacity = 0;
+    document.body.style.transition = "opacity 1s ease-in-out";
+
+    window.addEventListener("load", () => {
+        document.body.style.opacity = 1;
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        });
+    });
+
+    // Add hover animation to all buttons
+    const buttons = document.querySelectorAll("button, .btn");
+    buttons.forEach(button => {
+        button.style.transition = "transform 0.3s ease, box-shadow 0.3s ease";
+        button.addEventListener("mouseover", () => {
+            button.style.transform = "scale(1.05)";
+            button.style.boxShadow = "0 8px 15px rgba(0, 0, 0, 0.2)";
+        });
+        button.addEventListener("mouseout", () => {
+            button.style.transform = "scale(1)";
+            button.style.boxShadow = "none";
+        });
+    });
+
+    // Add fade-in effect to sections on scroll
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+        section.style.opacity = 0;
+        section.style.transform = "translateY(20px)";
+        section.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+        observer.observe(section);
+    });
+</script></script>
+
+ <!-- Floating Action Buttons -->
+ <div class="fab-container">
+    <a href="https://zalo.me/84901001001" target="_blank" class="fab fab-zalo" title="Chat on Zalo">
+      <i class="fas fa-comment-dots"></i>
+    </a>
+    <a href="https://wa.me/84901001001" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="mailto:support@gigiassignments.com" class="fab fab-email" title="Send Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <style>
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+  
+    .fab {
+      width: 50px;
+      height: 50px;
+      background-color: #25d366; /* Default WhatsApp green */
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  
+    .fab:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  
+    .fab-zalo {
+      background-color: #1877f2; /* Updated Zalo blue */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-zalo:hover {
+      background-color: #145dbf; /* Darker Zalo blue */
+    }
+  
+    .fab-whatsapp {
+      background-color: #25d366; /* Correct WhatsApp green */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-whatsapp:hover {
+      background-color: #1ebe57; /* Darker WhatsApp green */
+    }
+  
+    .fab-email {
+      background-color: #ea4335; /* Updated Email red */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .fab-email:hover {
+      background-color: #c5221f; /* Darker Email red */
+    }
+  </style>
+  </body>
+  </html>.
+
+</body>
+</html>
