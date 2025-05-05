@@ -336,7 +336,7 @@
 
 <body>
 <div style="position: absolute; top: 10px; right: 10px;">
-  <button class="language-switcher" onclick="switchLanguage()" style="background: #00a86b; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 600; cursor: pointer; transition: background 0.3s ease;">
+  <button class="language-switcher" onclick="switchLanguage()" style="background: #064137; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 600; cursor: pointer; transition: background 0.3s ease;">
   VN / EN
   </button>
 </div>
@@ -353,33 +353,45 @@
 
   
 <!-- Top Banner -->
-<div class="top-banner">
- 
+<div class="top-banner" style="background: linear-gradient(90deg, #004d40, #00a86b); padding: 1rem; color: white; text-align: center; font-size: 1rem; font-weight: 600; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
   <p data-en="🎁 New customer? Save 15% instantly!" data-vi="🎁 Khách hàng mới? Tiết kiệm ngay 15%!">
-  🎁 New customer? Save 15% instantly!
+    🎁 New customer? Save 15% instantly!
   </p>
 </div>
-  
-  <p data-en="📌📌 SUPER PREFERENTIAL COST WITH TOP QUALITY, you cannot find anywhere an academic writing assistant who understands you better than us!!!🎉🎉" data-vi="📌📌CHI PHÍ SIÊU ƯU ĐÃI VỚI CHẤT LƯỢNG HÀNG ĐẦU, bạn không thể tìm thấy ở đâu một trợ lý viết học thuật hiểu bạn hơn chúng tôi!!🎉🎉">
-   📌📌 SUPER PREFERENTIAL COST WITH TOP QUALITY, you cannot find anywhere an academic writing assistant who understands you better than us!!!🎉🎉
-  </p>
-</div>
-  
+
+<p data-en="📌📌 SUPER PREFERENTIAL COST WITH TOP QUALITY, you cannot find anywhere an academic writing assistant who understands you better than us!!!🎉🎉" 
+   data-vi="📌📌CHI PHÍ SIÊU ƯU ĐÃI VỚI CHẤT LƯỢNG HÀNG ĐẦU, bạn không thể tìm thấy ở đâu một trợ lý viết học thuật hiểu bạn hơn chúng tôi!!🎉🎉" 
+   style="font-size: 1.2rem; font-weight: 700; color: #004d40; text-align: center; margin-top: 1rem; padding: 1rem; background: #e8f5e9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); animation: fadeInUp 1s ease-in-out;">
+  📌📌 SUPER PREFERENTIAL COST WITH TOP QUALITY, you cannot find anywhere an academic writing assistant who understands you better!!!🎉🎉
+</p>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
 
 <!-- Header -->
 <header class="header">
-  <div class="brand-logo-container">
-  <img src="https://i.ibb.co/HfNXn5WS/image.png" alt="GIGI Logo" class="brand-logo" />
-
   <div class="container header-container">
-  <div class="logo" >GIGI Assignment Support</div>
-  <nav class="nav">
-    <a href="index.html" class="active" data-en="Home" data-vi="Trang Chủ">Home</a>
-    <a href="Aboutus.html" data-en="About us" data-vi="Về Chúng Tôi">About us</a>
-    <a href="Services.html" data-en="Services" data-vi="Dịch Vụ">Services</a>
-    <a href="Blog & News.html" data-en="Blog & News" data-vi="Blog & Tin Tức">Blog & News</a>
-    <a href="Ourcareers.html" data-en="Our Careers" data-vi="Nghề Nghiệp">Our Careers</a>
-  </nav>
+    <div class="brand-logo-container" style="display: flex; align-items: center; gap: 10px;">
+      <img src="https://i.ibb.co/p6r3dVVN/image.png" alt="GIGI Logo" class="brand-logo" style="height: 170px; width: auto;" /> <!-- Increased height -->
+      <div class="logo" style="font-size: 1.7rem; color: hsl(168, 70%, 24%); font-weight: bold;">GIGI ASSIGNMENT SUPPORT</div>
+    </div>
+    <nav class="nav" style="font-size: 1.1rem; display: flex; align-items: center;"> <!-- Enlarged font size -->
+      <a href="index.html" class="active" data-en="Home" data-vi="Trang Chủ">Home</a>
+      <a href="Aboutus.html" data-en="About us" data-vi="Về Chúng Tôi">About us</a>
+      <a href="Services.html" data-en="Services" data-vi="Dịch Vụ">Services</a>
+      <a href="Blog & News.html" data-en="Blog & News" data-vi="Blog & Tin Tức">Blog & News</a>
+      <a href="Ourcareers.html" data-en="Our Careers" data-vi="Nghề Nghiệp">Our Careers</a>
+    </nav>
   </div>
 </header>
 
@@ -395,11 +407,11 @@
          🎯Get international academic services with guaranteed originality, top grades, and all at unbeatable, market-leading prices 👍      
       </p>
       
-<a href="#order" class="btn-primary" data-en="Book Now" data-vi="Đặt Ngay">Book Now</a>
-    </div>
+<a href="#order" class="btn-primary btn-urgent" data-en="Book Now" data-vi="Đặt Ngay" style="animation: pulse 1.5s infinite;">Book Now</a>
+  </div>
 
-    <div class="hero-form" id="order">
-<form id="order-form" action="https://formsubmit.co/thihinhui@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
+  <div class="hero-form" id="order">
+<form id="order-form" action="https://formsubmit.co/agency@gigiassignmentsupport.org" method="POST" enctype="multipart/form-data" novalidate>
   <h2 data-en="Submit Your Order" data-vi="Gửi Đơn Hàng">Submit Your Order</h2>
   <input type="text" id="name" name="Customer-Name" required placeholder="Customer's Name" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed">
   <input type="email" id="email" name="Email" required placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
@@ -635,37 +647,27 @@ src="https://i.ibb.co/GfjF6kgY/image.png" alt="ISB University">
   </div>
 </section>
 
-<!-- Message -->
-<section class="Message">
-  <div class="form">
-    <form class="vertical-form" action="https://submit-form.com/RAiwNRvFO" method="POST">
-      <input type="text" name="Full-name" required placeholder="Full-Name">
-      <input type="email" name="email" required placeholder="Email">
-      <textarea name="Your Message" required placeholder="Your Message" rows="5" ></textarea>
-      <button type="submit" class="btn-primary" data-en="Send Message" data-vi="Gửi Tin Nhắn">Send Message</button>  
-    </form>
-  </div>
-</section>
 
 <!-- Footer -->
 <footer class="footer">
   <div class="container footer-content">
     <p>© 2025 GIGI Assignment Support. Powered by top global experts.</p>
-    <p>📍 District 1, Ho Chi Minh City, Vietnam | ✉️ support@gigiassignments.com | 📞 +84 901 001 001</p>
+    <p>📍 Timesquare Building, District 1, Ho Chi Minh City, Vietnam | ✉️ agency@gigiassignmentsupport.org | 📞 +84 703 856 495</p>
   </div>
 </footer>
 
 </body>
-</html>.
+</html>
+
 <!-- Floating Action Buttons -->
 <div class="fab-container">
-  <a href="https://zalo.me/84901001001" target="_blank" class="fab fab-zalo" title="Chat on Zalo">
+  <a href="https://zalo.me/84703856495" target="_blank" class="fab fab-zalo" title="Chat on Zalo">
     <i class="fas fa-comment-dots"></i>
   </a>
-  <a href="https://wa.me/84901001001" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
+  <a href="https://wa.me/84703856495" target="_blank" class="fab fab-whatsapp" title="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  <a href="mailto:support@gigiassignments.com" class="fab fab-email" title="Send Email">
+  <a href="mailto: agency@gigiassignmentsupport.org" class="fab fab-email" title="Send Email">
     <i class="fas fa-envelope"></i>
   </a>
 </div>
@@ -729,185 +731,3 @@ src="https://i.ibb.co/GfjF6kgY/image.png" alt="ISB University">
   }
 </style>
 
-<!-- Chat Box -->
-<div class="chat-box-container" style="display: none;"></div>
-  <div class="chat-box-header">
-    <h4>Live Support</h4>
-    <button class="chat-box-close" onclick="toggleChatBox()">×</button>
-  </div>
-  <div class="chat-box-body">
-    <div class="chat-messages" id="chat-messages">
-      <div class="chat-message bot">
-        <p>Welcome! How can we assist you today?</p>
-      </div>
-    </div>
-    <form id="chat-form" onsubmit="sendMessage(event)">
-      <input type="text" id="chat-input" placeholder="Type your message..." required />
-      <button type="submit">Send</button>
-    </form>
-  </div>
-</div>
-
-<style>
-  .chat-box-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-    flex-direction: column;
-    z-index: 1000;
-  }
-
-  .chat-box-header {
-    background: #00a86b;
-    color: white;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .chat-box-header h4 {
-    margin: 0;
-    font-size: 1rem;
-  }
-
-  .chat-box-close {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-
-  .chat-box-body {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-  }
-
-  .chat-messages {
-    flex: 1;
-    padding: 10px;
-    overflow-y: auto;
-    background: #f8f9fa;
-  }
-
-  .chat-message {
-    margin-bottom: 10px;
-  }
-
-  .chat-message.bot {
-    text-align: left;
-  }
-
-  .chat-message.user {
-    text-align: right;
-  }
-
-  .chat-message p {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 10px;
-    background: #e0e0e0;
-    margin: 0;
-  }
-
-  .chat-message.bot p {
-    background: #00a86b;
-    color: white;
-  }
-
-  #chat-form {
-    display: flex;
-    padding: 10px;
-    border-top: 1px solid #ccc;
-  }
-
-  #chat-input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-
-  #chat-form button {
-    background: #00a86b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  #chat-form button:hover {
-    background: #007d58;
-  }
-</style>
-
-<script>
-  const faqResponses = {
-    "services": "We offer academic writing, proofreading, and business writing services.",
-    "pricing": "Our pricing is competitive and depends on the type of service and deadline.",
-    "contact": "You can reach us at support@gigiassignments.com or call +84 901 001 001.",
-    "deadline": "We ensure on-time delivery and offer rush options within 12–24 hours."
-  };
-
-  function toggleChatBox() {
-    const chatBox = document.querySelector('.chat-box-container');
-    chatBox.style.display = chatBox.style.display === 'none' ? 'flex' : 'none';
-  }
-
-  function sendMessage(event) {
-    event.preventDefault();
-    const input = document.getElementById('chat-input');
-    const message = input.value.trim().toLowerCase();
-    if (message) {
-      const chatMessages = document.getElementById('chat-messages');
-      const userMessage = document.createElement('div');
-      userMessage.classList.add('chat-message', 'user');
-      userMessage.innerHTML = `<p>${input.value}</p>`;
-      chatMessages.appendChild(userMessage);
-
-      const botMessage = document.createElement('div');
-      botMessage.classList.add('chat-message', 'bot');
-      botMessage.innerHTML = `<p>${faqResponses[message] || "Sorry, I didn't understand that. Please ask about services, pricing, contact, or deadlines."}</p>`;
-      chatMessages.appendChild(botMessage);
-
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-      input.value = '';
-    }
-  }
-</script>
-
-<!-- Chat Toggle Button -->
-<button onclick="toggleChatBox()" class="chat-toggle-btn">
-  <i class="fas fa-comments"></i> Chat with us
-</button>
-
-<style>
-  .chat-toggle-btn {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background: #00a86b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .chat-toggle-btn:hover {
-    background: #007d58;
-  }
-</style>
